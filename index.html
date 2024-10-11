@@ -26,8 +26,8 @@
             <img src="images/profile_toyota.png" alt="Profile Image" class="profile-image">
             
             <div class="profile-info" id="header-details">
-                <h2>Jhon Doe</h2>
-                <p>Front End Designer</p>
+                <h2 id="fullname-user">Jhon Doe</h2>
+                <p id="role-user">Front End Designer</p>
             </div>
         </div>
 
@@ -45,12 +45,12 @@
 
     <!-- form-style -->
     <div class="header-style" id="box-form">
-        <form action="">
+        <form action="" onsubmit="return handleSubmit(event)">
             <label for="">name</label> <br>
-            <input type="text"> <br>
+            <input type="text" id="name-user"> <br>
     
             <label for="">role</label>
-            <input type="text"> <br>
+            <input type="text" id="role-user"> <br>
     
             <label for="">availibilty</label>
             <input type="text"> <br>
